@@ -1,7 +1,5 @@
-from sqlalchemy import Column, Integer, String, DateTime
+from sqlalchemy import Column, Integer, String
 from sqlalchemy import create_engine
-from sqlalchemy.sql import func
-import datetime
 from sqlalchemy.orm import sessionmaker, declarative_base
 
 Base = declarative_base()
@@ -12,7 +10,7 @@ class Product(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String)
     category = Column(String)
-    date = Column(DateTime(), default=datetime.datetime.now)
+    date = Column(String)
     price = Column(Integer)
 
 
