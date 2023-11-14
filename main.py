@@ -4,8 +4,6 @@ import re
 import datetime
 from database import create_session, Product
 from sqlalchemy.orm import Session
-from sqlalchemy import select
-from sqlalchemy.sql import func
 from functools import partial
 
 
